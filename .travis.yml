@@ -1,7 +1,7 @@
 sudo: required
 language: go
 go:
-  - "1.11"
+- '1.11'
 go_import_path: github.com/xiaokangwang/AndroidLibV2ray
 git:
   depth: 5
@@ -20,9 +20,9 @@ after_success:
 deploy:
   provider: releases
   api_key:
-    secure: M5ad7tjHLbr2vA64wVbVHRE/aSYar/l7EXx7SuMfg+ccyWFHWcNBJdElCnYxK5cpPJKSR9CqFOy4W3Qe6FBfhK2LjLWjAANeWFFdt5yC9mtE5z0AXuOLu8FgIAXob8MvzMgBc7lop3/sb2EoLagzQdtU7fZce1Z6PZL7UZ8qrynzvfOkv6gG9qIbR3y//i1ZJuhHT8WTtCPPUkCkb+Dnd7cP/j4d0sYoSEDhMR4iqOV6KcBRIfE/knL8yOhDXOrWP/TiWFaBchBzm3J4vxGqC6D2QKgmgFZwF+3l3kCOoXUj/FDe31tDCJI87OxXBvA/60OQfFbtyb/7Rk/2SxRmBm/3uiwFwBntlxkuqtJVVK2RQsFhJMjt6XE+BYmNY4+H4/V3Nkj56vRuhdQSM8bJAvz5MqiI8YPVAwpdANlTFOOyeARdb5cSzsklYSxJivmt+tj0nH9vpOx7f0dNYKhRZzKwSjLFRn/LDj/+XnM/LNYwgJmIWCBz0BJEV+yK5zirGi7ualJmWUfNjPy2TpE4b95Dm4TtdwsS1E39hY6aaVMKzJtMUtJohBdCnQFvCjSDUEXGZTLV3ODvtQu0S2Rj+gkiYhzWiWTt+EZIdC+0APNduq+Ngu8HpRugsMiCVaL76nQpErW+aP3auzN5WJY8zQSvMZvA9BfAEBrkACEDjss=
+    secure: "LyI53PY0s3xs7KJOH8DYdy2b0P6fzNgr8xSj+k/BHTL4GoNcc7UQng8iNftwpO30w8p8ok4qk2iYAHt1Qtq2GzL2FMMPtm7aEuUgHP1cDj9B9CRlVvkf6/0Af8gr/wUWb+14d/Rzz7dVhO2SVOQXKn8tBjqJYKfS8Zi1tGQpBo//ZWIrXlHYVaSjZJaGdQhBGkmAcXOB96pXQXGU55jyXsOc6DqVkFpIF/+7SX06NZEmb8x0bzLbSNG+W5gtyDGM2K/vFRD4Fh9/yF9GX/yGCTlCJm2KL/+DP51/ukz8I41J2+lJtH95/kCJdqWINq407jDDDxupmn6yGziSjWY4jFVLkU2mxvggdpOVCnnSjl6pmcftAHTWyPfTWWYb6P3h7wmI1nP+MvM9JEo50gyW2gnVnJgWr1W2fvXqMC5gKe/2M09S1XaBkndVYDIwtxBNVnvDaBmTKq6k0ipnYYlzADjotq8eyUSK7bWcnel1+YALs9mADGbxslHfu2KmkAyay5bpCmRSAE9Ag9ohCyaB8LNlHsPl5fWqRpY1zYA92KEBADX/k1+qzAR7nv8JCBIDmW9GHmfztdnGR8MkGHERDwwULM5URpnc0Pyji8E1S8Uj4RgJSRL+iJiIkD3A6phA8A25hhUZrEiR9iAVLFESgo8JsrhSv0EHGa07/XGBYJQ="
   file:
-    - libv2ray.aar
+  - libv2ray.aar
   skip_cleanup: true
   on:
     tags: true
