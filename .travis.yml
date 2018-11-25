@@ -1,7 +1,7 @@
 sudo: required
 language: go
 go:
-- '1.11'
+  - '1.11'
 go_import_path: github.com/xiaokangwang/AndroidLibV2ray
 git:
   depth: 5
@@ -10,7 +10,6 @@ addons:
     update: true
 before_script:
 - sudo ntpdate -u time.google.com
-- export TRAVIS_TAG=${TRAVIS_TAG:-$(date +'%Y%m%d%H%M%S')-$(git log --format=%h -1)}
 - date
 - make all
 - make downloadGoMobile
@@ -23,7 +22,7 @@ deploy:
   api_key:
     secure: "C3fOiepT4COe87yN68hQ6yck26Po8NkzOfobOGPIqdJ+pQRNBZF7RbLiql11xIUO9MXLv1xskpHzGZ7dJy+gwU0oI64e79I/Q+l/WBuiEM6CGX6N0QmYEK3VFO0w687VwCY2NA48CxoXtyEmz517jq04t2e8UKu+5ODrrJCWFvVxHKh0X009ObCKOWYZy4BaW085KcQNNbzMjlBT6yI9u70iYEKEfxKDy6nWQLFP9ooJ/qun/tikbApoM2rcZ4bxEoyifuBtvLQIfyY+njL/mzzjAeZQNQWalF+GTvmftXr2wPCIRXtewkCsksVDoT8U3Ij4RBfXqc2rsyNoGKXWRPryX4p7duAIoiokL0R+8tDh1+SsSe2vkZZwO7Gn+6799QSMRxdgLiHR05+pxEpm/Tj844xEFyoQoJQN6zstej2w+l/rQjFH1xshC8hK0eThd3qlE/C3KBt9ZxSRjZKlGqmk9lt04Ti9tI/SiXJuauIUCXUTV9rKHisgLhbPbN9ibijaxnC6DnYAPlYFJY4URxVYsUlq9tZUK2ArA8pXocbbCKURW0w49Gs88IvPgRcnv15MH93R192TnK6+AatE9u+9AZpiavYPpQ1IDSgIiWhLhLj0U3IlVnrtePDdfgPWhhIqrUuqVMp6vCIjrsZVLjp2/YbI3K9WkCSwCqQQozo="
   file:
-  - libv2ray.aar
+    - libv2ray.aar
   skip_cleanup: true
   on:
     tags: true
